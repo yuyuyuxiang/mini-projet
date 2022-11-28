@@ -42,11 +42,9 @@ nav{
     justify-content: space-around;
 }
 
-nav p{
-}
-
 nav p a{
     font-size: 2.4rem;
+    color: black;
     line-height: 100px;
     text-decoration: none;
 }
@@ -96,4 +94,10 @@ footer p a{
     line-height: 10rem;
     text-decoration: underline;
     color: rgb(0, 0, 0);
+}
+.typewrite-div{
+    text-align: center;
+}
+.typewrite-div a span{
+    font-size: 5rem;
 }

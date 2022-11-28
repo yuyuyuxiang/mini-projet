@@ -11,4 +11,4 @@
         <input name="submit" value="soumettre" type="submit"/>
     </form>
 </div>
-<li><a href="https://github.com/yuyuyuxiang/mini-projet/blob/main/home.php"><b>Mon page Github</b> : https://github.com/yuyuyuxiang/mini-projet/blob/main/home.php</a></li><li><b class="change-color">CodePen</b> : https://codepen.io/trending</li><li><b class="change-color">ILOVEU</b> : http://rtrtrtrtr</li><li><b class="change-color">JKHkjhjb</b> : http://adadae</li>
+<li><a href="https://github.com/yuyuyuxiang/mini-projet/blob/main/home.php"><b>Mon page Github</b> : https://github.com/yuyuyuxiang/mini-projet/blob/main/home.php</a></li><li><b class="change-color">CodePen</b> : https://codepen.io/trending</li>
