@@ -1,0 +1,201 @@
+Index: css0.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>*{\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n    font-size: 10px;\r\n    background-color: #404258;\r\n}\r\nbody{\r\n    padding-top: 20px;\r\n    padding-bottom: 40px;\r\n}\r\nheader, nav, .page-container, footer{\r\n    width: 1000px;\r\n    margin: 0 auto;\r\n    margin-bottom: 2rem;\r\n    background-color:#474E68;\r\n    color: #ffffff;\r\n    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;\r\n}\r\n\r\nheader, nav, footer{\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    height: 100px;\r\n}\r\n\r\n.logo-caweb{\r\n    margin: auto 0;\r\n    margin-left: 40px;\r\n    background-color:#474E68;\r\n}\r\n\r\n.logo-caweb img{\r\n    background-color:#474E68;\r\n}\r\n\r\n.titre{\r\n    margin: auto 0;\r\n    margin-right: 40px;\r\n    background-color:#474E68;\r\n}\r\n\r\n.titre h1{\r\n    font-size: 3.6rem;\r\n    font-family: 'Russo One', sans-serif;\r\n    background-color:#474E68;\r\n}\r\n\r\nnav{\r\n    justify-content: space-around;\r\n}\r\n\r\nnav p{\r\n    background-color:#474E68;\r\n}\r\n\r\nnav p a{\r\n    font-size: 2.4rem;\r\n    line-height: 100px;\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n    background-color:#474E68;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\nnav p a:hover{\r\n    color: rgb(59, 47, 228);\r\n}\r\n\r\n.page-container{\r\n    padding: 1.4rem;\r\n}\r\n\r\n.page-container h1{\r\n    width: 100%;\r\n    font-size: 2.4rem;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    text-align: center;\r\n    margin-bottom: 2rem;\r\n    background-color: #474E68;\r\n}\r\n\r\n.home-section h2{\r\n    width: 100%;\r\n    font-size: 2rem;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    text-align: center;\r\n    margin-bottom: 2rem;\r\n    background-color: #474E68;\r\n}\r\n\r\n.section-content{\r\n    background-color: #474E68;\r\n}\r\n\r\n.section-content p{\r\n    font-size: 2rem;\r\n    line-height: 2.4rem;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    margin: 2rem;\r\n    background-color:#474E68;\r\n}\r\n\r\n.section-content-media{\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-evenly;\r\n}\r\n.section-content-media img{\r\n    width: 48%\r\n}\r\niframe{\r\n    width: 48%;\r\n}\r\n@media screen and (max-width: 600px){\r\n    .section-content-media{\r\n        display: flex;\r\n        flex-direction: column;\r\n        justify-content: center;\r\n    }\r\n    .section-content-media img{\r\n        width: 100%;\r\n        margin-bottom: 10px;\r\n    }\r\n    iframe{\r\n        width: 100%;\r\n    }\r\n}\r\n\r\nfooter{\r\n    justify-content: space-around;\r\n}\r\n\r\nfooter p{\r\n    background-color: #474E68;\r\n}\r\n\r\nfooter p a{\r\n    font-size: 2.4rem;\r\n    line-height: 10rem;\r\n    text-decoration: underline;\r\n    color: rgb(255, 255, 255);\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    background-color: #474E68;\r\n}\r\n.typewrite-div{\r\n    text-align: center;\r\n}\r\n.typewrite-div a{\r\n    color: white;\r\n}\r\n.typewrite-div a span{\r\n    font-size: 5rem;\r\n    font-family: 'Russo One', sans-serif;\r\n}\r\n@media screen and (max-width: 600px){\r\n    .typewrite-div a span{\r\n        font-size: 2.5rem;\r\n    }\r\n}\r\n.gallery-description{\r\n    font-size: 2rem;\r\n}\r\n.liens p, .liens form label, .liens form input, .liens form textarea{\r\n    font-size: 2rem;\r\n}\r\nli a, li b{\r\n    font-size: 2rem;\r\n}\r\n#cboxTitle{\r\n    font-size: 2rem;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css0.css b/css0.css
+--- a/css0.css	(revision baa4b6f040b5a4b57b259782191e28e2dc56b7e2)
++++ b/css0.css	(date 1669724097916)
+@@ -15,6 +15,7 @@
+     margin-bottom: 2rem;
+     background-color:#474E68;
+     color: #ffffff;
++    -webkit-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+ }
+ 
+Index: css1.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>*{\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box;\n    font-size: 10px;\n    font-family: 'Inter', sans-serif;\n}\n\nheader, nav, .page-container, footer{\n    width: 1000px;\n    margin: 0 auto;\n    margin-bottom: 2rem;\n    color: #000000;\n\n}\n\nheader, nav, footer{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    height: 100px;\n}\n\n.logo-caweb{\n    margin: auto 0;\n    margin-left: 40px;\n\n}\n\n\n.titre{\n    margin: auto 0;\n    margin-right: 40px;\n\n}\n\n.titre h1{\n    font-size: 3.6rem;\n}\n\nnav{\n    justify-content: space-around;\n}\n\nnav p a{\n    font-size: 2.4rem;\n    color: black;\n    line-height: 100px;\n    text-decoration: none;\n}\n\nnav p a:hover{\n    color: rgb(59, 47, 228);\n}\n\n.page-container{\n    padding: 1.4rem;\n}\n\n.page-container h1{\n    width: 100%;\n    font-size: 2.4rem;\n    font-family: Arial, Helvetica, sans-serif;\n    text-align: center;\n    margin-bottom: 2rem;\n\n}\n\n.home-section h2{\n    width: 100%;\n    font-size: 2rem;\n    text-align: center;\n    margin-bottom: 2rem;\n\n}\n\n.section-content p{\n    font-size: 2rem;\n    line-height: 2.4rem;\n    margin: 2rem;\n}\n\n.section-content img{\n    margin: 2rem auto;\n    display: block;\n}\n\nfooter{\n    justify-content: space-around;\n}\n\nfooter p a{\n    font-size: 2.4rem;\n    line-height: 10rem;\n    text-decoration: underline;\n    color: rgb(0, 0, 0);\n}\n.typewrite-div{\n    text-align: center;\n}\n.typewrite-div a span{\n    font-size: 5rem;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css1.css b/css1.css
+--- a/css1.css	(revision baa4b6f040b5a4b57b259782191e28e2dc56b7e2)
++++ b/css1.css	(date 1669724097918)
+@@ -11,6 +11,8 @@
+     margin: 0 auto;
+     margin-bottom: 2rem;
+     color: #000000;
++    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
++    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ 
+ }
+ 
+@@ -21,6 +23,29 @@
+     height: 100px;
+ }
+ 
++.navig-ligne:last-of-type{
++    display: flex;
++    flex-direction: row;
++    
++}
++
++.navig-ligne:last-of-type span{
++    display: flex;
++    flex-direction: row;
++    font-size: 2.4rem;
++    line-height: 100px;
++    font-family: 'Inter', sans-serif;
++}
++
++.navig-ligne:last-of-type input{
++    
++    line-height: 100px;
++    height: 70px;
++    width: 70px;
++    margin: 15px;
++
++}
++
+ .logo-caweb{
+     margin: auto 0;
+     margin-left: 40px;
+@@ -80,9 +105,16 @@
+     margin: 2rem;
+ }
+ 
+-.section-content img{
++.section-content-media img{
+     margin: 2rem auto;
+     display: block;
++    object-fit: cover;
++    width: calc(100% - 10px);
++}
++
++.section-content-media iframe{
++    width: calc(100% - 10px);
++    height: 560px;
+ }
+ 
+ footer{
+@@ -100,4 +132,19 @@
+ }
+ .typewrite-div a span{
+     font-size: 5rem;
++}
++
++@media (min-width: 320px) and (max-width: 768px) {
++
++
++    nav{
++        height: 100px;
++    }
++
++    .navig-ligne a{
++        font-size: 2.4rem;
++        color: black;
++        line-height: 100px;
++        text-decoration: none;
++    }
+ }
+\ No newline at end of file
+Index: index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\n    $page=$_GET['page'];\n    $titre=$_GET['titre'];\n    $css=$_GET['css'];\n    if (($page=='')||(substr($page,0,7)=='http://')) {\n        $titre = \"Introduction\";\n        $page = \"home.php\";\n        $css = \"css0\";\n    }\n?>\n<html lang=\"fr\">\n\n    <head>\n\n        <title><?php echo $titre ?></title>\n\n        <meta charset=\"utf-8\"/>\n        <link rel=\"icon\" type=\"image/x-ico\" href=\"img/logo.png\" />\n\n        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n        <link href=\"https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap\" rel=\"stylesheet\">\n        <link href=\"https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chakra+Petch:wght@300;400&family=Righteous&family=Russo+One&display=swap\" rel=\"stylesheet\">\n\n        <?php echo '<link href=\"'.$css.'.css\"'. ' rel=\"stylesheet\" type=\"text/css\">'; ?>\n        <style>\n            .typewrite{\n                color: #000000;\n                text-decoration: none;\n            }\n        </style>\n\n    </head>\n\n    <body>\n        <header>\n            <?php include \"header.php\";//haut de page?>\n        </header>\n\n        <nav>\n            <?php include \"navig.php\"; //menu ?>\n        </nav>\n        <div class=\"page-container\">\n            <?php\n                include $page;\n            ?>\n        </div>\n\n        <footer>\n            <?php include \"footer.php\"; //bas de page?>\n        </footer>\n\n        <div class=\"typewrite-div\">\n            <a href=\"\" class=\"typewrite\" data-period=\"2000\" data-type='[ \"Hi, we are Super Agence Web.\", \"We are Creative.\", \"We Love to Develop.\" ]'>\n                <span class=\"wrap\"></span>\n            </a>\n        </div>\n\n        <script type=\"text/javascript\">\n                var TxtType = function(el, toRotate, period) {\n                this.toRotate = toRotate;\n                this.el = el;\n                this.loopNum = 0;\n                this.period = parseInt(period, 10) || 2000;\n                this.txt = '';\n                this.tick();\n                this.isDeleting = false;\n            };\n\n                TxtType.prototype.tick = function() {\n                var i = this.loopNum % this.toRotate.length;\n                var fullTxt = this.toRotate[i];\n\n                if (this.isDeleting) {\n                this.txt = fullTxt.substring(0, this.txt.length - 1);\n            } else {\n                this.txt = fullTxt.substring(0, this.txt.length + 1);\n            }\n\n                this.el.innerHTML = '<span class=\"wrap\">'+this.txt+'</span>';\n\n                var that = this;\n                var delta = 200 - Math.random() * 100;\n\n                if (this.isDeleting) { delta /= 2; }\n\n                if (!this.isDeleting && this.txt === fullTxt) {\n                delta = this.period;\n                this.isDeleting = true;\n            } else if (this.isDeleting && this.txt === '') {\n                this.isDeleting = false;\n                this.loopNum++;\n                delta = 500;\n            }\n\n                setTimeout(function() {\n                that.tick();\n            }, delta);\n            };\n\n                window.onload = function() {\n                var elements = document.getElementsByClassName('typewrite');\n                for (var i=0; i<elements.length; i++) {\n                var toRotate = elements[i].getAttribute('data-type');\n                var period = elements[i].getAttribute('data-period');\n                if (toRotate) {\n                new TxtType(elements[i], JSON.parse(toRotate), period);\n            }\n            }\n                // INJECT CSS\n                var css = document.createElement(\"style\");\n                css.type = \"text/css\";\n                css.innerHTML = \".typewrite > .wrap { border-right: 0.08em solid #fff}\";\n                document.body.appendChild(css);\n            };\n\n                //function background color changes when input color value changes\n                function changeColor() {\n                    var color = document.getElementById(\"navig-ligne-color\").value;\n                    //all the p color changes\n                    var p = document.getElementsByTagName(\"p\");\n                    var p2 = document.getElementsByClassName(\"change-color\");\n                    for (var i = 0; i < p.length; i++) {\n                        p[i].style.color = color;\n                    }\n                    for (var i = 0; i < p2.length; i++) {\n                        p2[i].style.color = color;\n                    }\n                }\n\n\n            // copy the list of li elements and put them in an ul element\n            var list = document.querySelectorAll('li');\n            var ul = document.querySelector('ul');\n            for (var i = 0; i < list.length; i++) {\n                ul.innerHTML += '<li>' + list[i].innerHTML + '</li>';\n            }\n\n\n            $(function() {\n                //get list\n                var $uList = $(\".scroll-box ul\");\n                var timer = null;\n                //clear timer\n                $uList.hover(function() {\n                        clearInterval(timer);\n                    },\n                    function() { //set time\n                        timer = setInterval(function() {\n                            scrollList($uList);\n                        }, 1000);\n                    }).trigger(\"mouseleave\"); //mouse evenement\n\n                function scrollList(obj) {\n                    //get list size\n                    var scrollHeight = $(\"ul li:first\").height();\n                    //scroll one element size\n                    $uList.stop().animate({\n                            marginTop: -scrollHeight\n                        }, 600,\n                        function() {\n                            //append the last to the first\n                            $uList.css({\n                                marginTop: 0\n                            }).find(\"li:first\").appendTo($uList);\n                        });\n                }\n            });\n        </script>\n    </body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.php b/index.php
+--- a/index.php	(revision baa4b6f040b5a4b57b259782191e28e2dc56b7e2)
++++ b/index.php	(date 1669724207250)
+@@ -15,7 +15,6 @@
+         <title><?php echo $titre ?></title>
+ 
+         <meta charset="utf-8"/>
+-        <link rel="icon" type="image/x-ico" href="img/logo.png" />
+ 
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+@@ -129,43 +128,6 @@
+                 }
+ 
+ 
+-            // copy the list of li elements and put them in an ul element
+-            var list = document.querySelectorAll('li');
+-            var ul = document.querySelector('ul');
+-            for (var i = 0; i < list.length; i++) {
+-                ul.innerHTML += '<li>' + list[i].innerHTML + '</li>';
+-            }
+-
+-
+-            $(function() {
+-                //get list
+-                var $uList = $(".scroll-box ul");
+-                var timer = null;
+-                //clear timer
+-                $uList.hover(function() {
+-                        clearInterval(timer);
+-                    },
+-                    function() { //set time
+-                        timer = setInterval(function() {
+-                            scrollList($uList);
+-                        }, 1000);
+-                    }).trigger("mouseleave"); //mouse evenement
+-
+-                function scrollList(obj) {
+-                    //get list size
+-                    var scrollHeight = $("ul li:first").height();
+-                    //scroll one element size
+-                    $uList.stop().animate({
+-                            marginTop: -scrollHeight
+-                        }, 600,
+-                        function() {
+-                            //append the last to the first
+-                            $uList.css({
+-                                marginTop: 0
+-                            }).find("li:first").appendTo($uList);
+-                        });
+-                }
+-            });
+         </script>
+     </body>
+ </html>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"1bb096a8-68cb-4939-bda7-85bbb9655d49\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/css2.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/css2.css\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/index.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/liens.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/liens.php\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2GM4QHSQ2BdrlrR47UloCZRgJF6\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/Applications/MAMP/htdocs/mini-projet/mini-projet&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;JavaScript.Libraries&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"1bb096a8-68cb-4939-bda7-85bbb9655d49\" name=\"Changes\" comment=\"\" />\n      <created>1666185102195</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1666185102195</updated>\n      <workItem from=\"1666185105280\" duration=\"8685000\" />\n      <workItem from=\"1666359022377\" duration=\"5167000\" />\n      <workItem from=\"1668510797874\" duration=\"8928000\" />\n      <workItem from=\"1668528155865\" duration=\"48000\" />\n      <workItem from=\"1669027591573\" duration=\"26390000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision baa4b6f040b5a4b57b259782191e28e2dc56b7e2)
++++ b/.idea/workspace.xml	(date 1669724109189)
+@@ -2,10 +2,9 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="1bb096a8-68cb-4939-bda7-85bbb9655d49" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/css2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css2.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/css0.css" beforeDir="false" afterPath="$PROJECT_DIR$/css0.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/css1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css1.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/liens.php" beforeDir="false" afterPath="$PROJECT_DIR$/liens.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -66,7 +65,7 @@
+       <workItem from="1666359022377" duration="5167000" />
+       <workItem from="1668510797874" duration="8928000" />
+       <workItem from="1668528155865" duration="48000" />
+-      <workItem from="1669027591573" duration="26390000" />
++      <workItem from="1669027591573" duration="26777000" />
+     </task>
+     <servers />
+   </component>
