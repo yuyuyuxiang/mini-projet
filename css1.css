@@ -119,4 +119,30 @@ footer p a{
 .typewrite-div a span{
     font-size: 5rem;
 }
+.scroll-box {
+    flex: 1;
+    height:50px;
+    border:2px solid rgb(0, 0, 0);
+    margin:15px auto;
+    overflow:hidden;
+    padding: 5px;
+}
 
+.scroll-box ul {
+    list-style:none;
+    width:100%;
+    height:100%;
+}
+@media screen and (max-width: 900px){
+    .scroll-box ul{
+        margin-left: -30px;
+    }
+}
+.scroll-box ul li {
+    width:100%;
+    height:40px;
+    line-height:40px;
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    text-align: center;
+}
