@@ -23,6 +23,29 @@ header, nav, footer{
     height: 100px;
 }
 
+.navig-ligne:last-of-type{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navig-ligne:last-of-type span{
+    display: flex;
+    flex-direction: row;
+    font-size: 2.4rem;
+    line-height: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+.navig-ligne:last-of-type input{
+    
+    line-height: 100px;
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+
+}
+
 .logo-caweb{
     margin: auto 0;
     margin-left: 40px;
@@ -82,9 +105,16 @@ nav p a:hover{
     margin: 2rem;
 }
 
-.section-content img{
+.section-content-media img{
     margin: 2rem auto;
     display: block;
+    object-fit: cover;
+    width: calc(100% - 10px);
+}
+
+.section-content-media iframe{
+    width: calc(100% - 10px);
+    height: 560px;
 }
 
 footer{
@@ -102,4 +132,19 @@ footer p a{
 }
 .typewrite-div a span{
     font-size: 5rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+
+    nav{
+        height: 100px;
+    }
+
+    .navig-ligne a{
+        font-size: 2.4rem;
+        color: black;
+        line-height: 100px;
+        text-decoration: none;
+    }
 }
