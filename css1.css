@@ -21,6 +21,21 @@ header, nav, footer{
     height: 100px;
 }
 
+.navig-ligne:last-of-type{
+    display: flex;
+    flex-direction: row;
+}
+
+.navig-ligne:last-of-type span{
+    font-size: 2.4rem;
+}
+
+.navig-ligne:last-of-type input{
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+}
+
 .logo-caweb{
     margin: auto 0;
     margin-left: 40px;
