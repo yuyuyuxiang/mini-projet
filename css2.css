@@ -215,9 +215,9 @@ iframe{
     flex: 1;
     height:40px;
     border:2px solid #2a5959;
-    margin:15px auto !important;
+    margin:15px auto;
     overflow:hidden;
-    padding: 5px !important;
+    padding: 5px;
 
 }
 
