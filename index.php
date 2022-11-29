@@ -15,6 +15,7 @@
         <title><?php echo $titre ?></title>
 
         <meta charset="utf-8"/>
+        <link rel="icon" type="image/x-ico" href="img/logo.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -128,6 +129,43 @@
                 }
 
 
+            // copy the list of li elements and put them in an ul element
+            var list = document.querySelectorAll('li');
+            var ul = document.querySelector('ul');
+            for (var i = 0; i < list.length; i++) {
+                ul.innerHTML += '<li>' + list[i].innerHTML + '</li>';
+            }
+
+
+            $(function() {
+                //get list
+                var $uList = $(".scroll-box ul");
+                var timer = null;
+                //clear timer
+                $uList.hover(function() {
+                        clearInterval(timer);
+                    },
+                    function() { //set time
+                        timer = setInterval(function() {
+                            scrollList($uList);
+                        }, 1000);
+                    }).trigger("mouseleave"); //mouse evenement
+
+                function scrollList(obj) {
+                    //get list size
+                    var scrollHeight = $("ul li:first").height();
+                    //scroll one element size
+                    $uList.stop().animate({
+                            marginTop: -scrollHeight
+                        }, 600,
+                        function() {
+                            //append the last to the first
+                            $uList.css({
+                                marginTop: 0
+                            }).find("li:first").appendTo($uList);
+                        });
+                }
+            });
         </script>
     </body>
 </html>
