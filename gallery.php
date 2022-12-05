@@ -27,7 +27,7 @@
         }
         @media screen and (max-width: 500px) {
             .miniatures{
-                column-count: 1;
+                column-count: 2;
             }
         }
     </style>
