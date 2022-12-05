@@ -239,4 +239,5 @@ iframe{
     text-align:center;
     color: rgb(0, 0, 0);
     font-style: oblique;
+    overflow: hidden;
 }
