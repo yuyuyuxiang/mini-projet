@@ -125,6 +125,9 @@ footer p a{
 .typewrite-div{
     text-align: center;
 }
+.typewrite{
+    text-decoration: none;
+}
 .typewrite-div a span{
     font-size: 5rem;
 }

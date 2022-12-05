@@ -158,6 +158,9 @@ footer p a{
 .typewrite-div{
     text-align: center;
 }
+.typewrite{
+    text-decoration: none;
+}
 .typewrite-div a{
     color: white;
 }

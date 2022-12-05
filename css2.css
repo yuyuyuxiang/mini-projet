@@ -84,6 +84,9 @@ footer{
     margin: auto;
     font-family: 'Abril Fatface', cursive;
 }
+.typewrite{
+    text-decoration: none;
+}
 @media screen and (max-width: 900px){
     .typewrite-div{
         font-size: 1.5em;
@@ -240,4 +243,8 @@ iframe{
     color: rgb(0, 0, 0);
     font-style: oblique;
     overflow: hidden;
+}
+.active{
+    border-bottom: double white 5px !important;
+    color: #ffffff !important;
 }

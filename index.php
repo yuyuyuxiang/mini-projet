@@ -21,14 +21,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chakra+Petch:wght@300;400&family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
         <?php echo '<link href="'.$css.'.css"'. ' rel="stylesheet" type="text/css">'; ?>
-        <style>
-            .typewrite{
-                color: #000000;
-                text-decoration: none;
-            }
-        </style>
 
     </head>
 
@@ -166,6 +161,28 @@
                         });
                 }
             });
+
+            //if current css is css2, then give the class "active" to the a of the third .footer-ligne
+            if ('<?php echo $css ?>' == 'css2') {
+                document.querySelectorAll(".footer-ligne")[2].querySelector("a").classList.add("active");
+            };
+            if ('<?php echo $css ?>' == 'css1') {
+                document.querySelectorAll(".footer-ligne")[1].querySelector("a").classList.add("active");
+            };
+            if ('<?php echo $css ?>' == 'css0') {
+                document.querySelectorAll(".footer-ligne")[0].querySelector("a").classList.add("active");
+            }
+
+            if('<?php echo $titre ?>' == 'Introduction'){
+                document.querySelectorAll(".navig-ligne")[0].querySelector("a").classList.add("active");
+            };
+            if('<?php echo $titre ?>' == 'Gallery'){
+                document.querySelectorAll(".navig-ligne")[1].querySelector("a").classList.add("active");
+            };
+            if('<?php echo $titre ?>' == 'Les liens utils'){
+                document.querySelectorAll(".navig-ligne")[2].querySelector("a").classList.add("active");
+            };
+
         </script>
     </body>
 </html>

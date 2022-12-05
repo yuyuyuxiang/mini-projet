@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1bb096a8-68cb-4939-bda7-85bbb9655d49" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css0.css" beforeDir="false" afterPath="$PROJECT_DIR$/css0.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liens.php" beforeDir="false" afterPath="$PROJECT_DIR$/liens.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
