@@ -61,10 +61,10 @@
     margin: 0 auto;
 };
 
-.active{
-    color: #239b1d;
-    border-bottom:#239b1d;
-    text-decoration: underline;
+ a .active{
+    color: #239b1d !important;
+    border-bottom:#239b1d !important;
+    text-decoration: underline !important;
 }
 
 header, nav, .page-container, footer{
