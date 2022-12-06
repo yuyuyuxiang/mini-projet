@@ -8,7 +8,7 @@
 }
 @media screen and (max-width: 900px){
     *{
-        font-size: 8px;
+        font-size: 10px;
     }
 
     header, nav, .page-container, footer{
@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 600px){
     *{
-        font-size: 6px;
+        font-size: 24px;
 
     }
 
