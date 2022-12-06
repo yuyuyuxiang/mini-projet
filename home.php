@@ -16,7 +16,7 @@
             </p>
             <div class="section-content-media">
                 <img src="https://www.donotlink.com/wp-content/uploads/2022/05/Equipe-au-sein-dune-agence-web.jpg" alt="office">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/duy1aOzEG3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/duy1aOzEG3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
