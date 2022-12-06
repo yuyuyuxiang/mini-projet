@@ -10,7 +10,7 @@
 .section-content-media img{
     width: 90%;
     object-fit: cover
-};
+}
 @media screen and (max-width: 900px){
     *{
         font-size: 8px;
@@ -25,12 +25,12 @@
         width: 90%;
         object-fit: cover;
         margin: 0;
-    };
+    }
 
     .section-content-media iframe{
         width: calc(100% - 2rem);
         margin: 2rem auto;
-    };
+    }
 }
 @media screen and (max-width: 600px){
     *{
@@ -45,13 +45,13 @@
     .section-content-media img{
         width: 90%;
         object-fit: cover
-    };
+    }
 
     .section-content-media iframe{
         width: calc(100% - 2rem);
         object-fit: cover;
         margin: 2rem auto;
-    };
+    }
 }
 
 .section-content-media iframe{
@@ -59,7 +59,7 @@
     object-fit: cover;
     height: 500px;
     margin: 0 auto;
-};
+}
 
 .active{
     color: #239b1d;
