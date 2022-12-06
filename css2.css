@@ -132,7 +132,6 @@ footer{
         text-shadow: 0 0 4px #2a5959;
     }
 }
-
 .logo-caweb{
     width: 100px;
     height: 100px;
@@ -152,7 +151,7 @@ footer{
 }
 .navig-ligne a:hover, .footer-ligne a:hover{
     color: #ffffff;
-    transform-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 .navig-ligne, .footer-ligne{
     position: fixed;
@@ -161,6 +160,53 @@ footer{
     height: 40px;
     padding-top: 10px;
     background-color: #2a5959;
+}
+.navig-ligne:hover, .footer-ligne:hover{
+    animation: bounce 1s;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    5% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    15% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-5px);
+    }
+    40% {
+        transform:translateY(0%);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    70% {
+        transform:translateY(0%);
+    }
+    80% {
+        transform:translateY(-1.5px);
+    }
+    90% {
+        transform:translateY(0%);
+    }
+    95% {
+        transform:translateY(-0.7px);
+    }
+    97% {
+        transform:translateY(0%);
+    }
+    99% {
+        transform:translateY(-0.3px);
+    }
+    100% {
+        transform:translateY(0);
+        opacity: 1;
+    }
 }
 .navig-ligne:nth-child(1), .footer-ligne:nth-child(1){
     margin-top: 5%;
