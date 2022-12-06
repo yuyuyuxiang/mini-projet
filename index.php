@@ -190,8 +190,8 @@
             }
         }
         // copy the list of li elements and put them in an ul element
-        var list = document.querySelectorAll('li');
-        var ul = document.querySelector('ul');
+        var list = document.querySelectorAll('.liens-li');
+        var ul = document.querySelector('.list');
         for (var i = 0; i < list.length; i++) {
             ul.innerHTML += '<li>' + list[i].innerHTML + '</li>';
         }
@@ -213,7 +213,7 @@
 
             function scrollList(obj) {
                 //get list size
-                var scrollHeight = $("ul li:first").height();
+                var scrollHeight = $(".list li:first").height();
                 //scroll one element size
                 $uList.stop().animate({
                         marginTop: -scrollHeight
@@ -247,5 +247,115 @@
         if('<?php echo $titre ?>' == 'Les liens utils'){
             document.querySelectorAll(".navig-ligne")[2].querySelector("a").classList.add("active");
         };
+    </script>
+    <script>
+        function my$(id) {
+            return document.getElementById(id);
+        }
+
+        var box=my$("box");
+        var inner=box.children[0];
+        var ulObj=inner.children[0];
+        var list=ulObj.children;
+        var olObj=inner.children[1];
+        var arr=my$("arr");
+        var imgWidth=inner.offsetWidth;
+        var right=my$("right");
+        var pic=0;
+        //créer les boutons selon le nombre d'éléments
+        for(var i=0;i<list.length;i++){
+            var liObj=document.createElement("li");
+
+            olObj.appendChild(liObj);
+            liObj.innerText=(i+1);
+            liObj.setAttribute("index",i);
+
+            liObj.onmouseover=function () {
+                //Effacer d'abord les styles de tous les boutons
+                for (var j=0;j<olObj.children.length;j++){
+                    olObj.children[j].removeAttribute("class");
+                }
+                this.className="current";
+                pic=this.getAttribute("index");
+                animate(ulObj,-pic*imgWidth);
+            }
+        }
+
+        //Définir le premier li dans ol pour avoir une couleur d'arrière-plan
+        olObj.children[0].className = "current";
+        //Cloner le premier li dans un ul, et l'ajouter au dernier dans ul
+        ulObj.appendChild(ulObj.children[0].cloneNode(true));
+
+        var timeId=setInterval(onmouseclickHandle,20000);
+        //Mise au point à gauche et à droite pour obtenir la fonction de cliquer pour changer d'image
+        box.onmouseover=function () {
+            arr.style.display="block";
+            clearInterval(timeId);
+        };
+        box.onmouseout=function () {
+            arr.style.display="none";
+            timeId=setInterval(onmouseclickHandle,20000);
+        };
+
+        right.onclick=onmouseclickHandle;
+        function onmouseclickHandle() {
+            //Si la valeur de pic est 5, qui se trouve être la valeur du nombre de li dans ul-1, la page affiche la sixième image et l'utilisateur pensera que c'est la première image.
+            //Donc, si l'utilisateur clique à nouveau sur le bouton, l'utilisateur devrait voir la deuxième image
+            if (pic == list.length - 1) {
+                //Comment passer de la 6e image à la première image
+                pic = 0;
+                ulObj.style.left = 0 + "px";//Rétablir la position de ul à la position par défaut au début
+            }
+            pic++;//Rendre immédiatement la photo plus 1, puis l'utilisateur verra la deuxième image à ce moment
+            animate(ulObj, -pic * imgWidth);//Après pic plus 1, la valeur de pic est 1, puis ul déplace une image
+            //Si pic == 5, la sixième image est affichée à ce moment (le contenu est la première image) et le premier petit bouton a une couleur.
+            if (pic == list.length - 1) {
+                //La couleur de cinquième bouton disparait
+                olObj.children[olObj.children.length - 1].className = "";
+                //Le premier bouton a la couleur
+                olObj.children[0].className = "current";
+            } else {
+                //Enlever la couleur de fond de tous les petits boutons
+                for (var i = 0; i < olObj.children.length; i++) {
+                    olObj.children[i].removeAttribute("class");
+                }
+                olObj.children[pic].className = "current";
+            }
+        }
+        left.onclick=function () {
+            if (pic==0){
+                pic=list.length-1;
+                ulObj.style.left=-pic*imgWidth+"px";
+            }
+            pic--;
+            animate(ulObj,-pic*imgWidth);
+            for (var i = 0; i < olObj.children.length; i++) {
+                olObj.children[i].removeAttribute("class");
+            }
+            //couleur du bouton
+            olObj.children[pic].className = "current";
+        };
+
+        //Définir n'importe quel élément et se déplacer vers la position ciblée
+        function animate(element, target) {
+            clearInterval(element.timeId);
+            //La valeur id de la timer est stockée dans un attribut de l'objet
+            element.timeId = setInterval(function () {
+                //Obtenir la position actuelle de l'élément
+                var current = element.offsetLeft;
+                //Distance de déplacement à chaque fois
+                var step = 5;
+                step = current < target ? step : -step;
+                current += step;
+                if (Math.abs(current - target) > Math.abs(step)) {
+                    element.style.left = current + "px";
+                } else {
+                    //Effacer timer
+                    clearInterval(element.timeId);
+                    //Aller directement au but
+                    element.style.left = target + "px";
+                }
+            }, 5);
+        }
     </script>
 </html>

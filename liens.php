@@ -15,5 +15,5 @@
 
     </ul>
 </div>
-<li><a href="https://github.com/yuyuyuxiang/mini-projet"><b>Mon page Github</b> : https://github.com/yuyuyuxiang/mini-projet</a></li><li><b class="change-color">CodePen</b> : https://codepen.io/trending</li>
-<li><b class="change-color">ILOVEU</b> : http://rtrtrtrtr</li><li><b class="change-color">BLABLA</b> : http://blablabla.com</li><li><b class="change-color">AAAA</b> : http://aaaaaaaa</li>
+<li class="liens-li"><a href="https://github.com/yuyuyuxiang/mini-projet"><b>Mon page Github</b> : https://github.com/yuyuyuxiang/mini-projet</a></li><li class="liens-li"><b class="change-color">CodePen</b> : https://codepen.io/trending</li>
+<li class="liens-li"><b class="change-color">ILOVEU</b> : http://rtrtrtrtr</li><li class="liens-li"><b class="change-color">BLABLA</b> : http://blablabla.com</li><li class="liens-li"><b class="change-color">AAAA</b> : http://aaaaaaaa</li>

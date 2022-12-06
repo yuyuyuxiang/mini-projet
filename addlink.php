@@ -10,12 +10,12 @@ if ($f = fopen ( $fich, "a"))
     $test=@fopen ($lien, 'r');
     if ($test){
         //le lien est valide, on l'insère en fin de fichier
-        $code='<li><a href="'.$lien.'"><b class="change-color">'.$commentaire.'</b> : '.$lien.'</a></li>';
+        $code='<li class="liens-li"><a href="'.$lien.'"><b class="change-color">'.$commentaire.'</b> : '.$lien.'</a></li>';
         fputs ($f, $code);
     }
     else {
         //le lien n'est pas valide, on l'insère en fin de fichier
-        $code='<li><b class="change-color">'.$commentaire.'</b> : '.$lien.'</li>';
+        $code='<li class="liens-li"><b class="change-color">'.$commentaire.'</b> : '.$lien.'</li>';
         fputs ($f, $code);
     };
     fclose ($f);

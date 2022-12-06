@@ -21,7 +21,31 @@
         </div>
         <h2 class="change-color">Tips CSS</h2>
         <div class="section-content">
-            <div class="section-content-tips">
+            <div class="box" id="box">
+                <div class="inner">
+
+                    <ul id="ulimg">
+                        <li><a href="#"><img src="img/1.gif" alt=""></a></li>
+                        <li><a href="#"><img src="img/tips1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="img/tips2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="img/tips3.jpg" alt=""></a></li>
+                    </ul>
+
+                    <ol class="bar">
+
+                    </ol>
+
+                    <div id="arr">
+                        <span id="left">
+                            <
+                        </span>
+                        <span id="right">
+                            >
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="section-content-tips">
                 <div class="tips-container">
                     <div class="tips">
                         <img id="tips-img-1" src="img/1.gif" alt="gif">
@@ -35,13 +59,13 @@
                     <div class="tips">
                         <img id="tips-img-4" src="img/tips3.jpg" alt="tips 3">
                     </div>
-                </div>
+                </div>-->
             </div>
-                <div class="tips-controle-btn">
+                <!--<div class="tips-controle-btn">
                     <a href="#tips-img-1"><button class="tips-btn">1</button></a>
                     <a href="#tips-img-2"><button class="tips-btn">2</button></a>
                     <a href="#tips-img-3"><button class="tips-btn">3</button></a>
                     <a href="#tips-img-4"><button class="tips-btn">4</button></a>
-                </div>
+                </div>-->
         </div>
     </div>
