@@ -20,6 +20,10 @@
         width: 90%;
         object-fit: cover
     };
+
+    .section-content-media iframe{
+        width: 90%;
+    };
 }
 @media screen and (max-width: 600px){
     *{
@@ -32,6 +36,11 @@
     }
 
     .section-content-media img{
+        width: 90%;
+        object-fit: cover
+    };
+
+    .section-content-media iframe{
         width: 90%;
         object-fit: cover
     };
