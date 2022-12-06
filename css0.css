@@ -30,7 +30,7 @@
 }
 @media screen and (max-width: 600px){
     *{
-        font-size: 24px;
+        font-size: 10px;
 
     }
 
@@ -51,6 +51,15 @@
 body{
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+p .navig-ligne{
+    display: flex;
+}
+
+p .navig-ligne input{
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -249,6 +258,17 @@ li a, li b{
     padding: 5px;
 }
 
+.loader{
+    background-color: #474E68;
+}
+
+.copy-right .loader span{
+    line-height: 70px;
+    font-size: 1.6rem;
+    background-color: #474E68;
+    color: #ffffff;
+}
+
 .scroll-box ul {
     list-style:none;
     width:100%;
@@ -273,13 +293,14 @@ li a, li b{
     padding-top: 20px;
 }
 
-.loader span {
+.loader span{
     position: relative;
     color: #000000;
     display: inline-block;
     animation: animate 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
     animation-play-state: paused;
+    line-height: 3rem;
 }
 
 .loader:hover span {
