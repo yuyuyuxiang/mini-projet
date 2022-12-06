@@ -6,6 +6,13 @@
     font-size: 10px;
     background-color: #404258;
 }
+
+.active{
+    color: rgb(255, 50, 180) !important;
+    border-bottom: rgb(255, 52, 180) !important;
+    text-decoration: underline !important;
+}
+
 @media screen and (max-width: 900px){
     *{
         font-size: 10px;
@@ -46,11 +53,7 @@ body{
     padding-bottom: 40px;
 }
 
-.active{
-    color: rgb(255, 50, 180) !important;
-    border-bottom: rgb(255, 52, 180) !important;
-    text-decoration: underline !important;
-}
+
 
 .copy-right{
     width: 1000px;
