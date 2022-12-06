@@ -1,9 +1,5 @@
  <link rel="stylesheet" type="text/css" href="colorbox/colorbox.css"/>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
     <style>
         .miniatures{
             box-sizing: border-box;
@@ -50,7 +46,6 @@
     <a id="slide-img" href="img/photo4.jpg" title="image 3:Titre 4"><img src="img/photo4.jpg" /></a>
 </div>
 
-<script type="text/javascript" src="slick/slick/slick.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
         $('.miniatures a').colorbox({rel:'a', transition:"none", width:"80%", height:"90%"});

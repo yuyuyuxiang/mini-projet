@@ -19,4 +19,29 @@
                 <iframe src="https://www.youtube.com/embed/duy1aOzEG3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+        <h2 class="change-color">Tips CSS</h2>
+        <div class="section-content">
+            <div class="section-content-tips">
+                <div class="tips-container">
+                    <div class="tips">
+                        <img id="tips-img-1" src="img/1.gif" alt="gif">
+                    </div>
+                    <div class="tips">
+                        <img id="tips-img-2" src="img/tips1.jpg" alt="tips 1">
+                    </div>
+                    <div class="tips">
+                        <img id="tips-img-3" src="img/tips2.jpg" alt="tips 2">
+                    </div>
+                    <div class="tips">
+                        <img id="tips-img-4" src="img/tips3.jpg" alt="tips 3">
+                    </div>
+                </div>
+            </div>
+                <div class="tips-controle-btn">
+                    <a href="#tips-img-1"><button class="tips-btn">1</button></a>
+                    <a href="#tips-img-2"><button class="tips-btn">2</button></a>
+                    <a href="#tips-img-3"><button class="tips-btn">3</button></a>
+                    <a href="#tips-img-4"><button class="tips-btn">4</button></a>
+                </div>
+        </div>
     </div>
