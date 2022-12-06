@@ -334,4 +334,10 @@ iframe{
         height: 30px;
         margin: 35px 15px;
     }
+
+    .copy-right .loader span{
+        line-height: 3rem;
+        margin: 0;
+    }
+
 };

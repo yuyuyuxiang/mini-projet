@@ -258,8 +258,15 @@ li a, li b{
     padding: 5px;
 }
 
+.loader{
+    background-color: #474E68;
+}
+
 .copy-right .loader span{
-    line-height: 1rem;
+    line-height: 70px;
+    font-size: 1.6rem;
+    background-color: #474E68;
+    color: #ffffff;
 }
 
 .scroll-box ul {
