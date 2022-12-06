@@ -53,12 +53,7 @@ header, nav, .page-container, footer{
 
 }
 
-.copy-right .loader span{
-    line-height: 70px;
-    font-size: 2rem;
-    text-align: left;
-    margin: 10px;
-}
+
 
 header, nav, footer{
     display: flex;
@@ -219,6 +214,9 @@ iframe{
     animation: animate 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
     animation-play-state: paused;
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: left;
 }
 
 .loader:hover span {
