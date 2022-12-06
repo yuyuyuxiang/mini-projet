@@ -52,7 +52,67 @@
             </a>
         </div>
         <div class="copy-right">
-            <p>© 2022 Super Agence Web - Yuxiang et Mike. All rights reserved.</p>
+            <div class="loader">
+                <span style="--i:1;">©</span>
+                <span style="--i:2;">2</span>
+                <span style="--i:3;">0</span>
+                <span style="--i:4;">2</span>
+                <span style="--i:5;">2</span>
+                <span style="--i:6;"> </span>
+                <span style="--i:7;">S</span>
+                <span style="--i:8;">u</span>
+                <span style="--i:9;">p</span>
+                <span style="--i:10;">e</span>
+                <span style="--i:11;">r</span>
+                <span style="--i:12;"> </span>
+                <span style="--i:13;">A</span>
+                <span style="--i:14;">g</span>
+                <span style="--i:15;">e</span>
+                <span style="--i:16;">n</span>
+                <span style="--i:17;">c</span>
+                <span style="--i:18;">e</span>
+                <span style="--i:19;"> </span>
+                <span style="--i:20;">-</span>
+                <span style="--i:21;"> </span>
+                <span style="--i:22;">Y</span>
+                <span style="--i:23;">u</span>
+                <span style="--i:24;">x</span>
+                <span style="--i:25;">i</span>
+                <span style="--i:26;">a</span>
+                <span style="--i:27;">n</span>
+                <span style="--i:28;">g</span>
+                <span style="--i:29;"> </span>
+                <span style="--i:30;">e</span>
+                <span style="--i:31;">t</span>
+                <span style="--i:32;"> </span>
+                <span style="--i:33;">M</span>
+                <span style="--i:34;">i</span>
+                <span style="--i:35;">k</span>
+                <span style="--i:36;">e</span>
+                <span style="--i:37;">.</span>
+                <span style="--i:38;"> </span>
+                <span style="--i:39;">A</span>
+                <span style="--i:40;">l</span>
+                <span style="--i:41;">l</span>
+                <span style="--i:42;"> </span>
+                <span style="--i:43;">r</span>
+                <span style="--i:44;">i</span>
+                <span style="--i:45;">g</span>
+                <span style="--i:46;">h</span>
+                <span style="--i:47;">t</span>
+                <span style="--i:48;">s</span>
+                <span style="--i:49;"> </span>
+                <span style="--i:50;">r</span>
+                <span style="--i:51;">e</span>
+                <span style="--i:52;">s</span>
+                <span style="--i:53;">e</span>
+                <span style="--i:54;">r</span>
+                <span style="--i:55;">v</span>
+                <span style="--i:56;">e</span>
+                <span style="--i:57;">d</span>
+                <span style="--i:58;">.</span>
+                <span style="--i:59;"> (hover me)</span>
+            </div>
         </div>
     </body>
     <script type="text/javascript">
