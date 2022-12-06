@@ -47,9 +47,9 @@ body{
 }
 
 .active{
-    color: rgb(255, 50, 180);
-    border-bottom: rgb(255, 52, 180);
-    text-decoration: underline;
+    color: rgb(255, 50, 180) !important;
+    border-bottom: rgb(255, 52, 180) !important;
+    text-decoration: underline !important;
 }
 
 .copy-right{
@@ -263,4 +263,34 @@ li a, li b{
     text-align:center;
     color: rgb(255, 255, 255);
     font-style: oblique;
+}
+
+.loader {
+    position: relative;
+    padding-top: 20px;
+}
+
+.loader span {
+    position: relative;
+    color: #000000;
+    display: inline-block;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    animation-play-state: paused;
+}
+
+.loader:hover span {
+    animation-play-state: running;
+}
+@keyframes animate {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
 }
