@@ -27,16 +27,16 @@ header{
     font-size: 3em;
     font-family: 'Abril Fatface', cursive;
 }
-@media screen and (max-width: 600px){
-    .titre-h1{
-        font-size: 1.7em;
-        text-align: center;
-    }
-}
 @media screen and (max-width: 900px){
     .titre-h1{
         text-align: center;
         font-size: 2em;
+    }
+}
+@media screen and (max-width: 600px){
+    .titre-h1{
+        font-size: 1.7em;
+        text-align: center;
     }
 }
 nav{
@@ -109,10 +109,33 @@ footer{
         font-size: 1.2em;
     }
 }
+.page-container h1{
+    animation: changeshadow 1s infinite;
+    text-align: center;
+}
+@keyframes changeshadow {
+    0% {
+        text-shadow: 0 0 4px #2a5959;
+    }
+    25% {
+        text-shadow: 40px 0 20px #2a5959;
+        transform: rotate(2deg);
+    }
+    50% {
+        text-shadow: 0px 0 4px #2a5959;
+    }
+    75% {
+        text-shadow: -40px 0 20px #2a5959;
+        transform: rotate(-2deg);
+    }
+    100% {
+        text-shadow: 0 0 4px #2a5959;
+    }
+}
+
 .logo-caweb{
     width: 100px;
     height: 100px;
-    margin-bottom: 10px;
 }
 .titre-h1{
     color: #2a5959;
@@ -129,6 +152,7 @@ footer{
 }
 .navig-ligne a:hover, .footer-ligne a:hover{
     color: #ffffff;
+    transform-duration: 0.5s;
 }
 .navig-ligne, .footer-ligne{
     position: fixed;
