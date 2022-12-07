@@ -286,15 +286,15 @@
         //Cloner le premier li dans un ul, et l'ajouter au dernier dans ul
         ulObj.appendChild(ulObj.children[0].cloneNode(true));
 
-        var timeId=setInterval(onmouseclickHandle,20000);
+        var timeId=setInterval(onmouseclickHandle,1500);
         //Mise au point à gauche et à droite pour obtenir la fonction de cliquer pour changer d'image
-        box.onmouseover=function () {
+        inner.onmouseover=function () {
             arr.style.display="block";
             clearInterval(timeId);
         };
-        box.onmouseout=function () {
+        inner.onmouseout=function () {
             arr.style.display="none";
-            timeId=setInterval(onmouseclickHandle,20000);
+            timeId=setInterval(onmouseclickHandle,1500);
         };
 
         right.onclick=onmouseclickHandle;
