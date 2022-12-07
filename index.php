@@ -24,9 +24,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
         <?php echo '<link href="'.$css.'.css"'. ' rel="stylesheet" type="text/css">'; ?>
+        <style>
+            #balle {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: blue;
+                border-radius: 50%;
+            }
+        </style>
 
     </head>
-
+    <div id="balle"></div>
     <body>
         <header>
             <?php include "header.php";//haut de page?>
@@ -356,6 +365,38 @@
                     element.style.left = target + "px";
                 }
             }, 5);
+        }
+    </script>
+    <script>
+        var balle = document.getElementById("balle");
+        var x = 0;
+        var y = 0;
+        var dx = 1;
+        var dy = 1;
+        var interval = setInterval(move, 1);
+        function move() {
+            x += dx;
+            y += dy;
+            balle.style.left = x + "px";
+            balle.style.top = y + "px";
+            if (x > window.innerWidth - 20 || x < 0) {
+                dx = -dx;
+            }
+            if (y > document.body.offsetHeight - 20 || y < 0) {
+                dy = -dy;
+            }
+        }
+        // the ball stops when the mouse is over it
+        balle.addEventListener("mouseover", function() {
+            balle.style.cursor = "pointer";
+        clearInterval(interval);
+        });
+        // the ball starts again when the mouse is out
+        balle.addEventListener("mouseout", function() {
+        interval = setInterval(move, 1);
+        });    
+        balle.onclick = function() {
+            alert("You got me!");
         }
     </script>
 </html>
