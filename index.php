@@ -5,7 +5,7 @@
     if (($page=='')||(substr($page,0,7)=='http://')) {
         $titre = "Introduction";
         $page = "home.php";
-        $css = "css0";
+        $css = "css2";
     }
 ?>
 <html lang="fr">
@@ -248,7 +248,7 @@
                 document.querySelectorAll(".footer-ligne")[0].querySelector("a").classList.add("active");
                 break;
         }
-        
+
         switch ('<?php echo $titre ?>') {
             case 'Introduction':
                 document.querySelectorAll(".navig-ligne")[0].querySelector("a").classList.add("active");
