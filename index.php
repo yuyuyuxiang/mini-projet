@@ -237,25 +237,29 @@
         });
 
         //if current css is css2, then give the class "active" to the a of the third .footer-ligne
-        if ('<?php echo $css ?>' == 'css2') {
-            document.querySelectorAll(".footer-ligne")[2].querySelector("a").classList.add("active");
-        };
-        if ('<?php echo $css ?>' == 'css1') {
-            document.querySelectorAll(".footer-ligne")[1].querySelector("a").classList.add("active");
-        };
-        if ('<?php echo $css ?>' == 'css0') {
-            document.querySelectorAll(".footer-ligne")[0].querySelector("a").classList.add("active");
+        switch ('<?php echo $css ?>') {
+            case 'css2':
+                document.querySelectorAll(".footer-ligne")[2].querySelector("a").classList.add("active");
+                break;
+            case 'css1':
+                document.querySelectorAll(".footer-ligne")[1].querySelector("a").classList.add("active");
+                break;
+            case 'css0':
+                document.querySelectorAll(".footer-ligne")[0].querySelector("a").classList.add("active");
+                break;
         }
-
-        if('<?php echo $titre ?>' == 'Introduction'){
-            document.querySelectorAll(".navig-ligne")[0].querySelector("a").classList.add("active");
-        };
-        if('<?php echo $titre ?>' == 'Gallery'){
-            document.querySelectorAll(".navig-ligne")[1].querySelector("a").classList.add("active");
-        };
-        if('<?php echo $titre ?>' == 'Les liens utils'){
-            document.querySelectorAll(".navig-ligne")[2].querySelector("a").classList.add("active");
-        };
+        
+        switch ('<?php echo $titre ?>') {
+            case 'Introduction':
+                document.querySelectorAll(".navig-ligne")[0].querySelector("a").classList.add("active");
+                break;
+            case 'Gallery':
+                document.querySelectorAll(".navig-ligne")[1].querySelector("a").classList.add("active");
+                break;
+            case 'Les liens utils':
+                document.querySelectorAll(".navig-ligne")[2].querySelector("a").classList.add("active");
+                break;
+        }
     </script>
     <script>
         function my$(id) {
