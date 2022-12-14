@@ -123,7 +123,7 @@
                 <span style="--i:60;">e</span>
                 <span style="--i:61;">d</span>
                 <span style="--i:62;">.</span>
-                <span style="--i:63;"> (hover me in CSS2)</span>
+                <span style="--i:63;"> (hover me)</span>
             </div>
         </div>
     </body>
@@ -389,11 +389,11 @@
         // the ball stops when the mouse is over it
         balle.addEventListener("mouseover", function() {
             balle.style.cursor = "pointer";
-        clearInterval(interval);
+            clearInterval(interval);
         });
         // the ball starts again when the mouse is out
         balle.addEventListener("mouseout", function() {
-        interval = setInterval(move, 1);
+            interval = setInterval(move, 1);
         });    
         balle.onclick = function() {
             alert("You got me!");
