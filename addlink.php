@@ -1,8 +1,8 @@
 
 <?php
-$css = $_GET[css];
-$lien=$_REQUEST[lien];
-$commentaire=$_REQUEST[commentaire];
+$css = $_GET['css'];
+$lien=$_REQUEST['lien'];
+$commentaire=$_REQUEST['commentaire'];
 $fich="liens.php";
 if (!file_exists ($fich)) {touch ($fich);} //si le fichier liens.txt n'existe pas il est créé
 if ($f = fopen ( $fich, "a"))
