@@ -7,6 +7,11 @@
         $page = "home.php";
         $css = "css2";
     }
+    //set cookie num is this year
+    $year = date("Y");
+    if (!isset($_COOKIE['num'])) {
+        setcookie('num', $year, time()+3600*24*365);
+    }
 ?>
 <html lang="fr">
 
@@ -256,7 +261,7 @@
             case 'Gallery':
                 document.querySelectorAll(".navig-ligne")[1].querySelector("a").classList.add("active");
                 break;
-            case 'Les liens utils':
+            case 'Liens':
                 document.querySelectorAll(".navig-ligne")[2].querySelector("a").classList.add("active");
                 break;
         }

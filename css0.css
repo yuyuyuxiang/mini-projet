@@ -430,12 +430,12 @@ ol .current{
         width: 90%;
         object-fit: cover;
         margin: 0;
-    };
+    }
 
     .section-content-media iframe{
         width: calc(100% - 2rem);
         margin: 2rem auto;
-    };
+    }
 
     .typewrite-div a span{
         font-size: 3rem;
@@ -495,13 +495,13 @@ ol .current{
     .section-content-media img{
         width: 90%;
         object-fit: cover
-    };
+    }
 
     .section-content-media iframe{
         width: calc(100% - 2rem);
         object-fit: cover;
         margin: 2rem auto;
-    };
+    }
 
     .typewrite-div a span{
         font-size: 2rem;
@@ -518,4 +518,4 @@ ol .current{
         margin: 0;
     }
 
-};
+}
