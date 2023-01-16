@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bb096a8-68cb-4939-bda7-85bbb9655d49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2022_4_11_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_2022_4_11_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addlink.php" beforeDir="false" afterPath="$PROJECT_DIR$/addlink.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css0.css" beforeDir="false" afterPath="$PROJECT_DIR$/css0.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css1.css" beforeDir="false" afterPath="$PROJECT_DIR$/css1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liens.php" beforeDir="false" afterPath="$PROJECT_DIR$/liens.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navig.php" beforeDir="false" afterPath="$PROJECT_DIR$/navig.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +23,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,6 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Applications/MAMP/htdocs/mini-projet2/mini-projet",
+    "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "JavaScript.Libraries",
     "vue.rearranger.settings.migration": "true"
@@ -75,7 +75,7 @@
       <workItem from="1669027591573" duration="26390000" />
       <workItem from="1670266303044" duration="18188000" />
       <workItem from="1673352195715" duration="21597000" />
-      <workItem from="1673433868219" duration="10974000" />
+      <workItem from="1673433868219" duration="18171000" />
     </task>
     <servers />
   </component>

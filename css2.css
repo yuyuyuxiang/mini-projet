@@ -1,3 +1,8 @@
+::selection { background: #659867; color:#fff;}
+
+::-moz-selection { background:#659867; color:#fff;}
+
+::-webkit-selection { background:#659867; color:#fff;}
 body{
     margin: 0;
     padding-top: 40px;
@@ -310,6 +315,8 @@ iframe{
     border: #2a5959 5px dashed;
     background-color: rgba(42, 89, 89, 0.3);
 }
+
+/*--------SCROLL BOX---------*/
 .scroll-box {
     flex: 1;
     height:40px;

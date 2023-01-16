@@ -243,6 +243,9 @@
 
         //if current css is css2, then give the class "active" to the a of the third .footer-ligne
         switch ('<?php echo $css ?>') {
+            case 'css3':
+                document.getElementsByClassName("footer-ligne")[3].getElementsByTagName("a")[0].classList.add("active");
+                break;
             case 'css2':
                 document.querySelectorAll(".footer-ligne")[2].querySelector("a").classList.add("active");
                 break;

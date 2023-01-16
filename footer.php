@@ -7,3 +7,6 @@
 <p class="footer-ligne">
     <a class="change-color" href="index.php?page=<?php echo $page ?>&css=css2&titre=<?php echo $titre ?>">CSS 2</a>
 </p>
+<p class="footer-ligne">
+    <a class="change-color" href="index.php?page=<?php echo $page ?>&css=css3&titre=<?php echo $titre ?>">CSS 3</a>
+</p>

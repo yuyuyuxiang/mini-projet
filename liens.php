@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
         $commentaire[]=$row['commentaire'];
     }
 } else {
-    echo "0 结果";
+    echo "0 résultat";
 }
 $conn->close();
 ?>
@@ -46,19 +46,24 @@ $conn->close();
     </ul>
 </div>
 <?php
-for($i=0;$i<count($lien);$i++){
-    $test=@fopen ($lien[$i], 'r');
-    if ($test){
-        //le lien est valide, on l'insère en fin de fichier
-        $code='<li class="liens-li"><a href="'.$lien[$i].'"><b name="commentaire2" class="change-color">'.$commentaire[$i].'</b> : '.$lien[$i].'</a>
+if($lien[0]!=""){
+    for($i=0;$i<count($lien);$i++){
+        $test=@fopen ($lien[$i], 'r');
+        if ($test){
+            //le lien est valide, on l'insère en fin de fichier
+            $code='<li class="liens-li"><a href="'.$lien[$i].'"><b name="commentaire2" class="change-color">'.htmlentities($commentaire[$i]).'</b> : '.$lien[$i].'</a>
         <a href="deletelink.php?commentaire='.$commentaire[$i].'&css='.$css.'"><button type="submit">Supprimer</button></a></li><br>';
-        echo $code;
-    }
-    else {
-        //le lien n'est pas valide, on l'insère en fin de fichier
-        $code='<li class="liens-li"><b name="commentaire2" class="change-color">'.$commentaire[$i].'</b> : '.$lien[$i].'
+            echo $code;
+        }
+        else {
+            //le lien n'est pas valide, on l'insère en fin de fichier
+            $code='<li class="liens-li"><b name="commentaire2" class="change-color">'.htmlentities($commentaire[$i]).'</b> : '.$lien[$i].'
         <a href="deletelink.php?commentaire='.$commentaire[$i].'&css='.$css.'"><button>Supprimer</button></a></li><br>';
-        echo $code;
-    };
+            echo $code;
+        };
+    }
+}else{
+    echo "Aucun lien";
 }
+
 ?>
