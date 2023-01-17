@@ -3,6 +3,12 @@
 ::-moz-selection { background:#659867; color:#fff;}
 
 ::-webkit-selection { background:#659867; color:#fff;}
+*{
+    font-family: 'Abril Fatface', normal;
+}
+p{
+    font-family: Times, sans-serif;
+}
 body{
     margin: 0;
     padding-top: 40px;
@@ -157,7 +163,7 @@ footer{
 .navig-ligne a, .footer-ligne a{
     text-decoration: none;
     color: #000000;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .navig-ligne a:hover, .footer-ligne a:hover{
     color: #ffffff;
@@ -232,7 +238,7 @@ footer{
 }
 @media screen and (max-width: 900px){
     .navig-ligne a, .footer-ligne a{
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .navig-ligne:nth-child(2), .footer-ligne:nth-child(2){
         margin-top: 15%;
@@ -267,7 +273,7 @@ footer{
         margin-top: 0;
     }
     .navig-ligne a, .footer-ligne a{
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 }
 .wrap{
@@ -347,6 +353,15 @@ iframe{
     font-style: oblique;
     overflow: hidden;
 }
+@media screen and (max-width: 600px){
+    .liens p, .liens form label, .liens form input, .liens form textarea{
+        font-size: 0.8em;
+    }
+    li a, li b{
+        font-size: 0.8em;
+    }
+}
+
 .active{
     border-bottom: double white 5px !important;
     color: #ffffff !important;

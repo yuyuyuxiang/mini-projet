@@ -1,3 +1,8 @@
+::selection { background: #5151ff; color:#fff;}
+
+::-moz-selection { background:#5151ff; color:#fff;}
+
+::-webkit-selection { background:#5151ff; color:#fff;}
 body{
     margin: 0;
     display: grid;
@@ -32,6 +37,7 @@ header{
     text-shadow: #5151ff 0px 10px 10px;
     border-left: #5151ff 5px solid;
     margin-left: -5px;
+    padding-top: 40px;
 }
 
 footer{
