@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 $conn->set_charset('utf8');
 // Check connection
 if ($conn->connect_error) {
-    die("连接失败: " . $conn->connect_error);
+    die("Connetion failed: " . $conn->connect_error);
 }
 //Delete this line
 $commentaire = $_GET['commentaire'];

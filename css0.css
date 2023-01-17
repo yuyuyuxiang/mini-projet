@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 10px;
-    background-color: #404258;
 }
 
 .active{
@@ -13,10 +12,10 @@
     text-decoration: underline !important;
 }
 
-
 body{
     padding-top: 20px;
     padding-bottom: 40px;
+    background-color: #404258;
 }
 
 p .navig-ligne{
@@ -69,11 +68,10 @@ header, nav, footer{
 .logo-caweb{
     margin: auto 0;
     margin-left: 40px;
-    background-color:#474E68;
 }
 
 .logo-caweb img{
-    background-color:#474E68;
+    filter: sepia(91%) saturate(1539%) hue-rotate(298deg) brightness(100%);
 }
 
 .titre{

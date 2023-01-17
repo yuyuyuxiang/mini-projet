@@ -12,11 +12,15 @@ body{
 }
 @media screen and (max-width: 600px){
     body{
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 50px 50px auto auto 60px;
+        margin-top: 40px;
     }
 }
 
+.logo-caweb img{
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(90%);
+}
 header{
     display: flex;
     flex-direction: column;
@@ -42,8 +46,12 @@ footer{
     footer{
         display: flex;
         flex-direction: row;
-        margin-bottom: 20px;
         padding-top: 0;
+        border-right: none;
+        justify-content: space-evenly;
+    }
+    header{
+        text-align: center;
     }
 }
 
@@ -59,7 +67,8 @@ nav{
     nav{
         display: flex;
         flex-direction: row;
-        margin-bottom: 20px;
+        border-right: none;
+        justify-content: space-evenly;
     }
 }
 
@@ -67,6 +76,14 @@ nav{
     text-decoration: none;
     color: #000000;
     font-size: 1.5em;
+}
+.navig-ligne a:hover, .footer-ligne a:hover{
+    color: #5151ff;
+}
+@media screen and (max-width: 600px){
+    .navig-ligne a, .footer-ligne a{
+        font-size: 1em;
+    }
 }
 div.page-container{
     grid-column: 2/2;
@@ -102,6 +119,41 @@ div.page-container{
     border-left: #5151ff 5px solid;
     margin-left: -5px;
 }
+@media screen and (max-width: 600px){
+    .typewrite-div{
+        font-size: 1.2em;
+    }
+    .copy-right{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 600px){
+    header{
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
+    nav{
+        grid-column: 1/1;
+        grid-row: 2/3;
+    }
+    footer{
+        grid-column: 1/1;
+        grid-row: 3/4;
+        border-top: 3px solid #5151ff;
+    }
+    .page-container{
+        grid-column: 1/1 !important;
+        grid-row: 4/5 !important;
+    }
+    .typewrite-div{
+        grid-column: 1/1;
+        grid-row: 5/6;
+    }
+    .copy-right{
+        grid-column: 1/1;
+        grid-row: 6/6;
+    }
+}
 .active{
     border-bottom: double #5151ff 5px !important;
     color: #5151ff !important;
@@ -117,6 +169,18 @@ div.page-container{
 }
 iframe{
     width: 48%;
+}
+@media screen and (max-width: 600px){
+    .section-content-media{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-content-media img{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
 }
 .loader {
     position: relative;

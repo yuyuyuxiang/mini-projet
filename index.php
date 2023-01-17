@@ -7,11 +7,6 @@
         $page = "home.php";
         $css = "css2";
     }
-    //set cookie num is this year
-    $year = date("Y");
-    if (!isset($_COOKIE['num'])) {
-        setcookie('num', $year, time()+3600*24*365);
-    }
 ?>
 <html lang="fr">
 
