@@ -3,6 +3,7 @@
 ::-moz-selection { background:#659867; color:#fff;}
 
 ::-webkit-selection { background:#659867; color:#fff;}
+::marker { color: #2a5959;}
 *{
     font-family: 'Abril Fatface', normal;
 }

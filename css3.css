@@ -3,6 +3,8 @@
 ::-moz-selection { background:#5151ff; color:#fff;}
 
 ::-webkit-selection { background:#5151ff; color:#fff;}
+
+::marker { color: #5151ff;}
 body{
     margin: 0;
     display: grid;
