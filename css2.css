@@ -17,7 +17,7 @@ body{
     grid-template-rows: 200px auto auto 60px;
     background-color: #82b2b2;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
     body{
         display: flex;
         flex-direction: column;
@@ -57,7 +57,7 @@ nav{
     flex-direction: column;
     text-align: center;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
     nav{
         display: flex;
         flex-direction: row;
@@ -79,7 +79,7 @@ footer{
     flex-direction: column;
     text-align: center;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
     footer{
         display: flex;
         flex-direction: row;
@@ -236,29 +236,12 @@ footer{
 .navig-ligne:nth-child(4), .footer-ligne:nth-child(4){
     margin-top: 20%;
 }
+
 @media screen and (max-width: 900px){
-    .navig-ligne a, .footer-ligne a{
-        font-size: 1em;
-    }
-    .navig-ligne:nth-child(2), .footer-ligne:nth-child(2){
-        margin-top: 15%;
-    }
-    .navig-ligne:nth-child(3), .footer-ligne:nth-child(3){
-        margin-top: 25%;
-    }
-    .navig-ligne:nth-child(4), .footer-ligne:nth-child(4){
-        margin-top: 35%;
-    }
-}
-@media screen and (max-width: 600px){
     .navig-ligne, .footer-ligne{
         position: static;
         width: 25%;
-        padding-top: 15px;
-    }
-    .navig-ligne:nth-child(4){
-        padding-top: 5px;
-        padding-bottom: 10px;
+        padding-top: 18px;
     }
     .navig-ligne:nth-child(1), .footer-ligne:nth-child(1){
         margin-top: 0;
@@ -273,7 +256,7 @@ footer{
         margin-top: 0;
     }
     .navig-ligne a, .footer-ligne a{
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
 .wrap{
