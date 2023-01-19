@@ -76,7 +76,7 @@ header, nav, footer{
 }
 
 .logo-caweb img{
-    filter: sepia(91%) saturate(1539%) hue-rotate(298deg) brightness(100%);
+    filter: sepia(91%) saturate(1539%) hue-rotate(260deg) brightness(100%);
 }
 
 .titre{
