@@ -29,6 +29,7 @@ $conn->close();
 ?>
 
 <h1> Les liens </h1>
+    <span class="change-color">Text color</span><input id="navig-ligne-color" type="color" onchange="changeColor()" >
 <div class="liens">
     <p> Soumettez vos liens !!!</p>
     <form name="form" id="form1" method="get" action="addlink.php">

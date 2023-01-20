@@ -1,3 +1,6 @@
+@page {
+    margin: 1cm;
+}
 ::selection { background: #5151ff; color:#fff;}
 
 ::-moz-selection { background:#5151ff; color:#fff;}
@@ -11,6 +14,9 @@ body{
     grid-template-columns: 15% auto;
     grid-template-rows: 200px 300px auto auto 60px;
     background-color: #b3b3e0;
+    background: linear-gradient(180deg, #b3b3e0, #cffcf8);
+    background: -moz-linear-gradient(180deg, #b3b3e0, #cffcf8);
+    background: -webkit-linear-gradient(180deg, #b3b3e0, #cffcf8);
 }
 @media screen and (max-width: 900px){
     body{
@@ -380,4 +386,270 @@ ol .current{
     color: rgb(0, 0, 0);
     font-style: oblique;
     overflow: hidden;
+}
+/*animation*/
+pre { margin-bottom: 0; margin-left: 20px;}
+svg { width: 1.5em; height: 1.5em; }
+
+button.anim-button {
+    width: 27px;
+    height: 27px;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button.play {
+    background-image: url('img/play.png');
+}
+
+button.pause {
+    background-image: url('img/pause.png');
+}
+
+button.restart {
+    background-image: url('img/replay.png');
+}
+
+.animation-box {
+    width: 100%;
+    display: flex;
+    background: #EEE;
+    font: 1em monospace;
+}
+
+.row {
+    display: flex;
+    flex: 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex: 1 auto;
+    flex-direction: column;
+}
+
+.cell {
+    box-sizing: border-box;
+    margin: .5em;
+    padding: 0;
+    background-color: #FFF;
+    overflow: hidden;
+    text-align: left;
+}
+
+.flx {
+    flex: 1 0;
+}
+
+.note {
+    background: #cffcf8;
+    padding: 1em;
+    margin: .5em;
+    font: .8em sans-serif;
+    text-align: left;
+    flex: none;
+}
+
+.overlay { padding: .5em; }
+
+@keyframes slidein {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+@keyframes rotation {
+    from { transform: rotate(-5deg); }
+    to { transform: rotate(5deg); }
+}
+
+.a1 { animation: 3s ease-in 1s 2 reverse both paused slidein; }
+.a2 { animation: 3s linear 1s slidein; }
+.a3 { animation: 3s slidein; }
+.a4 { animation: 1s 2 reverse rotation; }
+.a5 { animation: .5s linear 1s infinite alternate rotation; }
+.a6 { animation: 1s rotation; }
+
+.animation {
+    background: #5151ff;
+    width: 100%;
+    height: 20px;
+    transform-origin: left center;
+}
+
+.a4, .a5, .a6 {
+    background: #5151ff;
+    width: 100%;
+    height: 20px;
+    transform-origin: center;
+}
+
+/*Grid*/
+.code{
+    margin: auto;
+    width: 80%;
+    border: 2px solid #5151ff;
+    border-radius: 10px;
+    background-color: #cffcf8;
+    height: 300px;
+    overflow: scroll;
+}
+.grid {
+    max-width: 1000px;
+    margin: 30px auto auto;
+    background: #EEE;
+}
+
+.grid > div {
+    border: 2px solid #5151ff;
+    border-radius: 5px;
+    background-color: #cffcf8;
+    padding: 1em;
+    color: #5151ff;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.un {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.deux {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+.trois {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+.quatre {
+    grid-column: 3;
+    grid-row: 3;
+}
+.cinq {
+    grid-column: 2;
+    grid-row: 4;
+}
+.six {
+    grid-column: 3;
+    grid-row: 4;
+}
+.grid-li{
+    font-size: 1.5em;
+}
+
+@media print {
+    * {
+        all: unset;
+        display: revert;
+    }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+    }
+    input,
+    textarea,
+    select {
+        all: revert;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 13pt;
+        line-height: 1.5;
+        background-color: #fff!important;
+        color: #000!important;
+    }
+    h1 {
+        font-size: 24pt;
+    }
+    h2 {
+        font-size: 20pt;
+        margin-top: 20pt;
+    }
+    h3,
+    h4 {
+        font-size: 14pt;
+        margin-top: 14pt;
+    }
+    h5,
+    h6 {
+        font-size: 13pt;
+        margin-top: 14pt;
+    }
+
+    p,
+    blockquote,
+    figcaption {
+        orphans: 3;
+        widows: 3;
+    }
+
+    ul,
+    ol,
+    dl,
+    a,
+    table,
+    pre,
+    blockquote {
+        page-break-inside: avoid;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    img,
+    figure,
+    caption {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+
+    ul,
+    ol,
+    dl {
+        page-break-before: avoid;
+    }
+
+    a,
+    a:link,
+    a:visited {
+        background: transparent !important;
+        color: unset;
+        font-weight: 700;
+        text-decoration: underline !important;
+    }
+
+    a[href^=http]:after,
+    a[href^=https]:after
+    {
+        content: " (" attr(href) ")";
+    }
+
+    video,
+    object,
+    iframe {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+    }
+    .navig-ligne a, .footer-ligne a{
+        font-size: 14pt;
+    }
 }

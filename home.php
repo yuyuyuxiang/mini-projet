@@ -1,5 +1,6 @@
 
     <h1 class="change-color">Vous avez trouvé la meilleure agence web au monde !</h1>
+    <span class="change-color">Text color</span><input id="navig-ligne-color" type="color" onchange="changeColor()" >
     <div class="home-section">
         <h2 class="change-color">Notre histoire</h2>
         <div class="section-content">

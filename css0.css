@@ -124,7 +124,7 @@ nav p a:hover{
     background-color: #474E68;
 }
 
-.home-section h2{
+h2{
     width: 100%;
     font-size: 2rem;
     text-align: center;
@@ -555,4 +555,165 @@ ol .current{
     .miniatures{
         column-count: 2;
     }
+}
+
+/*animation*/
+pre { margin-bottom: 0; color: black; margin-left: 20px; }
+
+button.anim-button {
+    width: 27px;
+    height: 27px;
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button.play {
+    background-image: url('img/play.png');
+}
+
+button.pause {
+    background-image: url('img/pause.png');
+}
+
+button.restart {
+    background-image: url('img/replay.png');
+}
+
+.animation-box {
+    width: 100%;
+    display: flex;
+    background: #EEE;
+    font: 1em monospace;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex: 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    flex: 1 auto;
+    flex-direction: column;
+}
+
+.cell {
+    box-sizing: border-box;
+    margin: .5em;
+    padding: 0;
+    background-color: #FFF;
+    overflow: hidden;
+    text-align: left;
+}
+
+.flx {
+    flex: 1 0;
+}
+
+.note {
+    background: #474E68;
+    padding: 1em;
+    margin: .5em;
+    font: .8em sans-serif;
+    text-align: left;
+    flex: none;
+    color: white;
+}
+
+.overlay { padding: .5em; }
+
+@keyframes slidein {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+}
+@keyframes rotation {
+    from { transform: rotate(-5deg); }
+    to { transform: rotate(5deg); }
+}
+
+.a1 { animation: 3s ease-in 1s 2 reverse both paused slidein; }
+.a2 { animation: 3s linear 1s slidein; }
+.a3 { animation: 3s slidein; }
+.a4 { animation: 1s 2 reverse rotation; }
+.a5 { animation: .5s linear 1s infinite alternate rotation; }
+.a6 { animation: 1s rotation; }
+
+.animation {
+    background: rgb(240, 46, 170);
+    width: 100%;
+    height: 20px;
+    transform-origin: left center;
+}
+
+.a4, .a5, .a6 {
+    background: rgb(240, 46, 170);
+    width: 100%;
+    height: 20px;
+    transform-origin: center;
+}
+
+/*Grid*/
+.code{
+    margin: auto;
+    width: 80%;
+    border: 2px solid rgb(240, 46, 170);
+    border-radius: 10px;
+    background-color: #404258;
+    height: 300px;
+    overflow: scroll;
+    color: white;
+}
+.grid {
+    max-width: 1000px;
+    margin: 30px auto auto;
+    background: #EEE;
+}
+
+.grid > div {
+    border: 2px solid rgb(240, 46, 170);
+    border-radius: 5px;
+    background-color: #404258;
+    padding: 1em;
+    color: rgb(240, 46, 170);
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.un {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+.deux {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+.trois {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+.quatre {
+    grid-column: 3;
+    grid-row: 3;
+}
+.cinq {
+    grid-column: 2;
+    grid-row: 4;
+}
+.six {
+    grid-column: 3;
+    grid-row: 4;
+}
+.grid-li{
+    font-size: 1.5em;
 }

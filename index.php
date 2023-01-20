@@ -256,11 +256,14 @@
             case 'Introduction':
                 document.querySelectorAll(".navig-ligne")[0].querySelector("a").classList.add("active");
                 break;
-            case 'Gallery':
+            case 'Animation':
                 document.querySelectorAll(".navig-ligne")[1].querySelector("a").classList.add("active");
                 break;
             case 'Liens':
                 document.querySelectorAll(".navig-ligne")[2].querySelector("a").classList.add("active");
+                break;
+            case 'Grid':
+                document.querySelectorAll(".navig-ligne")[3].querySelector("a").classList.add("active");
                 break;
         }
     </script>
