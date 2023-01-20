@@ -333,7 +333,37 @@ iframe{
     border: #2a5959 5px dashed;
     background-color: rgba(42, 89, 89, 0.3);
 }
-
+button{
+    background-color: #2a5959;
+    color: white;
+    border-radius: 10px;
+}
+/* Gallery */
+.miniatures{
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    column-count: 3;
+    column-gap: 10px;
+}
+#slide-img{
+    margin-bottom: 20px;
+    width: 200px;
+}
+#slide-img img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 900px) {
+    .miniatures{
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 500px) {
+    .miniatures{
+        column-count: 2;
+    }
+}
 /*--------SCROLL BOX---------*/
 .scroll-box {
     flex: 1;

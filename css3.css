@@ -24,7 +24,11 @@ body{
         margin-top: 40px;
     }
 }
-
+button{
+    background-color: #5151ff;
+    color: white;
+    border-radius: 10px;
+}
 .logo-caweb img{
     filter: sepia(100%) hue-rotate(190deg) saturate(500%) brightness(90%);
 }
@@ -227,7 +231,32 @@ iframe{
         transform: translateY(-10px);
     }
 }
-
+/* Gallery */
+.miniatures{
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    column-count: 3;
+    column-gap: 10px;
+}
+#slide-img{
+    margin-bottom: 20px;
+    width: 200px;
+}
+#slide-img img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 900px) {
+    .miniatures{
+        column-count: 2;
+    }
+}
+@media screen and (max-width: 500px) {
+    .miniatures{
+        column-count: 2;
+    }
+}
 /* SLIDER */
 #box {
     width: calc(100% - 20px);

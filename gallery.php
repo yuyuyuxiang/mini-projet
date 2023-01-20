@@ -1,32 +1,5 @@
  <link rel="stylesheet" type="text/css" href="colorbox/colorbox.css"/>
     <script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
-    <style>
-        .miniatures{
-            box-sizing: border-box;
-            width: 100%;
-            margin: auto;
-            column-count: 3;
-            column-gap: 10px;
-        }
-        #slide-img{
-            margin-bottom: 20px;
-            width: 200px;
-        }
-        #slide-img img{
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        @media screen and (max-width: 900px) {
-            .miniatures{
-                column-count: 2;
-            }
-        }
-        @media screen and (max-width: 500px) {
-            .miniatures{
-                column-count: 2;
-            }
-        }
-    </style>
  <p class="gallery-description">Whereas most of us know what an art museum is and what they do – more or less – when it comes to art galleries, it seems the public opinion is less familiar with them.
 
      An art gallery is an exhibition space to display and sell artworks. As a result, the art gallery is a commercial enterprise working with a portfolio of artists. The gallery acts as the dealer representing, supporting, and distributing the artworks by the artists in question.
