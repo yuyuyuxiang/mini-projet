@@ -1,7 +1,7 @@
 <?php
 $css = $_GET['css'];
 header("Content-type:text/html;charset=utf-8");
-$servername = "localhost:8889";//MySQL默认为localhost，端口号3306
+$servername = "localhost:8889";
 $username = "root";
 $password = "root";
 $dbname = "mini-projet";
