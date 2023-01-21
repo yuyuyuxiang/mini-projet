@@ -385,7 +385,7 @@ ol .current{
     font-weight: bold;
     font-size: 30px;
     opacity: 0.5;
-    color: #2a5959;
+    color: rgb(240, 46, 170);
 }
 #arr #right {
     right: 5px;
