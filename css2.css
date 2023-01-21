@@ -592,7 +592,11 @@ ol .current{
 
 /*animation*/
  pre { margin-bottom: 0; margin-left: 20px;}
-svg { width: 1.5em; height: 1.5em; }
+ @media screen and (max-width: 380px) {
+    pre {
+        margin-left: -20px;
+    }
+ }
 
 button.anim-button {
     width: 27px;
@@ -636,6 +640,8 @@ button.restart {
     display: flex;
     flex: 1 auto;
     flex-direction: column;
+    width: 100%;
+    overflow: scroll;
 }
 
 .cell {

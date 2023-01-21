@@ -19,7 +19,7 @@
          <li>animation-fill-mode,</li>
          <li>animation-play-state.</li>
      </ul>
-
+     <br>
      <h2>Que sont les animations CSS ?</h2>
      <p class="gallery-description">
      Une animation permet à un élément de passer progressivement d'un style à un autre.
@@ -30,7 +30,7 @@
 
      Les images clés indiquent les styles que l'élément aura à certains moments.
      </p>
-
+     <br>
      <h2>La règle @keyframes</h2>
      <p class="gallery-description">
      Lorsque vous spécifiez des styles CSS dans la règle @keyframes, l'animation passe progressivement du style actuel au nouveau style à certains moments.

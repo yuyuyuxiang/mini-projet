@@ -559,6 +559,9 @@ ol .current{
 
 /*animation*/
 pre { margin-bottom: 0; color: black; margin-left: 20px; }
+@media screen and (max-width: 320px) {
+    pre { margin-left: -10px; }
+}
 
 button.anim-button {
     width: 27px;
@@ -603,6 +606,8 @@ button.restart {
     display: flex;
     flex: 1 auto;
     flex-direction: column;
+    width: 100%;
+    overflow: scroll;
 }
 
 .cell {
