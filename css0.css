@@ -439,7 +439,7 @@ ol .current{
 
     .loader span{
         margin: 0 !important;
-        font-size: 1.4rem !important;
+        font-size: 1rem !important;
         line-height: 2rem !important;
     }
 
@@ -487,11 +487,6 @@ ol .current{
         width: 30px;
         height: 30px;
         margin: 35px 15px;
-    }
-
-    .copy-right .loader span{
-        line-height: 3rem;
-        margin: 0;
     }
 
 }
