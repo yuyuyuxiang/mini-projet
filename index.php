@@ -1,7 +1,10 @@
 <?php
+    error_reporting(0);
+
     $page=$_GET['page'];
     $titre=$_GET['titre'];
     $css=$_GET['css'];
+
     if (($page=='')||(substr($page,0,7)=='http://')) {
         $titre = "Introduction";
         $page = "home.php";
